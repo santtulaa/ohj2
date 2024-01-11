@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="243.0" prefWidth="315.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Treenipaivakirja.HenkiloGUIController">
+	<top>
+		<Label prefHeight="18.0" prefWidth="311.0" text="Henkilötiedot" BorderPane.alignment="CENTER">
+			<font>
+				<Font name="Times New Roman" size="21.0" />
+			</font>
+			<padding>
+				<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+			</padding>
+		</Label>
+	</top>
+	<center>
+		<GridPane BorderPane.alignment="CENTER">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="96.2000244140625" minWidth="10.0" prefWidth="79.80003662109375" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="206.99996337890627" minWidth="10.0" prefWidth="206.99996337890627" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="100.20001220703125" minWidth="10.0" prefWidth="21.199987792968727" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<Label text="Nimi">
+					<GridPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</GridPane.margin>
+				</Label>
+				<Label text="Ikä" GridPane.rowIndex="1">
+					<GridPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</GridPane.margin>
+				</Label>
+				<Label text="Sukupuoli" GridPane.rowIndex="2">
+					<GridPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</GridPane.margin>
+				</Label>
+				<Label text="Paino" GridPane.rowIndex="3">
+					<GridPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</GridPane.margin>
+				</Label>
+				<Label text="Pituus" GridPane.rowIndex="4">
+					<GridPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</GridPane.margin>
+				</Label>
+				<TextField fx:id="textNimi" GridPane.columnIndex="1">
+					<GridPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</GridPane.margin>
+				</TextField>
+				<TextField fx:id="textIka" GridPane.columnIndex="1" GridPane.rowIndex="1">
+					<GridPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</GridPane.margin>
+				</TextField>
+				<TextField fx:id="textSp" GridPane.columnIndex="1" GridPane.rowIndex="2">
+					<GridPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</GridPane.margin>
+				</TextField>
+				<TextField fx:id="textPaino" GridPane.columnIndex="1" GridPane.rowIndex="3">
+					<GridPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</GridPane.margin>
+				</TextField>
+				<TextField fx:id="textPituus" GridPane.columnIndex="1" GridPane.rowIndex="4">
+					<GridPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</GridPane.margin>
+				</TextField>
+				<Label text="kg" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+				<Label text="cm" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+			</children>
+		</GridPane>
+	</center>
+	<bottom>
+		<ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+			<items>
+				<Button mnemonicParsing="false" onAction="#handleTallenna" text="Tallenna" />
+				<Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#handlePeruuta" text="Peruuta" />
+			</items>
+		</ToolBar>
+	</bottom>
+	<padding>
+		<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+	</padding>
+</BorderPane>
